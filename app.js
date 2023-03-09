@@ -25,7 +25,7 @@ var x = setInterval(function() {
   // Si le compte à rebours est terminé, afficher un message
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRÉ";
+    document.getElementById("countdown").innerHTML = "C'est l'heure les enfants!";
   }
 }, 1000);
 
