@@ -1,5 +1,7 @@
-#countdown {
+html{
     font-family: Arial, sans-serif;
+}
+#countdown { 
     font-size: 24px;
     text-align: center;
     margin-top: 50px;
@@ -20,4 +22,15 @@
     line-height: 80px;
     margin: 0 10px;
     border-radius: 5px;
+}
+ul{
+    text-decoration: none;
+}
+li{
+    display: inline-flex;
+    margin-left: 20px;
+}
+li a{
+    text-decoration: none;
+    color: #333;
 }

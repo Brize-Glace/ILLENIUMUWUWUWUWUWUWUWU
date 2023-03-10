@@ -29,3 +29,9 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+function googleTranslateElementInit() {
+  new googleTranslateElementInit.translate.TranslateElement({
+    pageLanguage: 'fr',
+    includedLanguages: googleTranslateElementInit.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'countdown')
+}
