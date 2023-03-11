@@ -1,5 +1,6 @@
 html{
     font-family: Arial, sans-serif;
+    height: 100%;
 }
 #countdown { 
     font-size: 24px;
@@ -33,4 +34,22 @@ li{
 li a{
     text-decoration: none;
     color: #333;
+}
+footer p{
+    margin-left: 50px;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: aqua;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
