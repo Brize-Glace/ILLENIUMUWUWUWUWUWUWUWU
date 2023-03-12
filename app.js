@@ -28,10 +28,3 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "C'est l'heure les enfants!";
   }
 }, 1000);
-
-function googleTranslateElementInit() {
-  new googleTranslateElementInit.translate.TranslateElement({
-    pageLanguage: 'fr',
-    includedLanguages: googleTranslateElementInit.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'countdown')
-}
