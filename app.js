@@ -28,3 +28,34 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "C'est l'heure les enfants!";
   }
 }, 1000);
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+  }
+
+  // calculer la luminosité de la couleur
+  var r = parseInt(color.substring(1,3),16);
+  var g = parseInt(color.substring(3,5),16);
+  var b = parseInt(color.substring(5,7),16);
+  var luminosity = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+
+  return {
+      color: color,
+      luminosity: luminosity
+  };
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  var randomColor = getRandomColor();
+  document.body.style.backgroundColor = randomColor.color;
+  document.body.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
+});
+
+window.addEventListener("beforeunload", function() {
+  var randomColor = getRandomColor();
+  document.body.style.backgroundColor = randomColor.color;
+  document.body.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
+});
