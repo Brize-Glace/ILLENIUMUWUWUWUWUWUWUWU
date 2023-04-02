@@ -26,14 +26,16 @@ html{
 }
 ul{
     text-decoration: none;
+    text-align: center;
 }
 li{
     display: inline-flex;
-    margin-left: 20px;
+    text-align: center;
 }
 li a{
     text-decoration: none;
     color: #333;
+    margin-left: 20px;
 }
 footer p{
     margin-left: 50px;
