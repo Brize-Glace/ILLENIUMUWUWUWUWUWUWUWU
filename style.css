@@ -24,18 +24,32 @@ html{
     margin: 0 10px;
     border-radius: 5px;
 }
-ul{
-    text-decoration: none;
-    text-align: center;
+#dropdownMenu {
+    display: none;
+}
+#menuButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 li{
-    display: inline-flex;
-    text-align: center;
+    list-style: none;
+    padding: 10px;
 }
 li a{
     text-decoration: none;
     color: #333;
     margin-left: 20px;
+}
+.navbarPortfolio{
+    float: right;
+    margin-right: 20px;
+    color: #333;
+    border: #333 1px solid;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
 }
 footer p{
     margin-left: 50px;

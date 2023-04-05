@@ -51,7 +51,9 @@ function getRandomColor() {
 document.addEventListener("DOMContentLoaded", function () {
   var randomColor = getRandomColor();
   var navbarColor = document.querySelectorAll("ul li a")
+  var navbarPortfolio = document.querySelectorAll(".navbarPortfolio")
   var footerColor = document.querySelectorAll("p")
+  var icons = document.querySelectorAll("i");
   document.body.style.backgroundColor = randomColor.color;
   document.body.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
   navbarColor.forEach(function(item) {
@@ -60,12 +62,21 @@ document.addEventListener("DOMContentLoaded", function () {
   footerColor.forEach(function(item) {
     item.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
   });
+  navbarPortfolio.forEach(function(item) {
+    item.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
+    item.style.border =  randomColor.luminosity < 0.5 ? "white 1px solid" : "black 1px solid";
+  });
+  icons.forEach(function(item) {
+    item.style.color = randomColor.luminosity < 0.5 ? "white": "black";
+  })
 });
 
 window.addEventListener("beforeunload", function () {
   var randomColor = getRandomColor();
-  var navbarColor = document.querySelectorAll("ul li a")
-  var footerColor = document.querySelectorAll("p a")
+  var navbarColor = document.querySelectorAll("ul li a");
+  var navbarPortfolio = document.querySelector(".navbarPortfolio");
+  var footerColor = document.querySelectorAll("p a");
+  var icons = document.querySelectorAll("i");
   document.body.style.backgroundColor = randomColor.color;
   document.body.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
   navbarColor.forEach(function(item) {
@@ -74,4 +85,22 @@ window.addEventListener("beforeunload", function () {
   footerColor.forEach(function(item) {
     item.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
   });
+  navbarPortfolio.forEach(function(item) {
+    item.style.color = randomColor.luminosity < 0.5 ? "white" : "black";
+  });
+  icons.forEach(function(item) {
+    item.style.color = randomColor.luminosity < 0.5 ? "white": "black";
+  })
 });
+
+const menuButton = document.getElementById("menuButton");
+const dropdownMenu = document.getElementById("dropdownMenu");
+
+menuButton.addEventListener("click", function() {
+  if (dropdownMenu.style.display === "block") {
+    dropdownMenu.style.display = "none";
+  } else {
+    dropdownMenu.style.display = "block";
+  }
+});
+
