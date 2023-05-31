@@ -2,7 +2,9 @@ html{
     font-family: Arial, sans-serif;
     height: 100%;
 }
-#countdown { 
+
+/* SAVE */
+/* #countdown { 
     font-size: 24px;
     text-align: center;
     margin-top: 50px;
@@ -23,6 +25,48 @@ html{
     line-height: 80px;
     margin: 0 10px;
     border-radius: 5px;
+} */
+#countdown {
+    font-size: 2vw; /* Utilisation des unités de vue pour la taille de police */
+    text-align: center;
+    margin-top: 2vw; /* Utilisation des unités de vue pour la marge supérieure */
+}
+
+#countdown h1 {
+    font-size: 3vw; /* Utilisation des unités de vue pour la taille de police */
+    margin-bottom: 0.5vw; /* Utilisation des unités de vue pour la marge inférieure */
+    margin-top: 2vw;
+}
+
+#countdown span {
+    display: inline-block;
+    width: 8vw; /* Utilisation des unités de vue pour la largeur */
+    height: 8vw; /* Utilisation des unités de vue pour la hauteur */
+    background-color: #333;
+    color: #fff;
+    font-size: 3vw; /* Utilisation des unités de vue pour la taille de police */
+    line-height: 8vw; /* Utilisation des unités de vue pour la hauteur de ligne */
+    margin: 0 1vw; /* Utilisation des unités de vue pour les marges horizontales */
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #countdown span {
+        display: inline-block;
+        width: 13vw; /* Utilisation des unités de vue pour la largeur */
+        height: 13vw; /* Utilisation des unités de vue pour la hauteur */
+        background-color: #333;
+        color: #fff;
+        font-size: 6vw; /* Utilisation des unités de vue pour la taille de police */
+        line-height: 13vw; /* Utilisation des unités de vue pour la hauteur de ligne */
+        margin: 0 1vw; /* Utilisation des unités de vue pour les marges horizontales */
+        border-radius: 5px;
+    }
+    #countdown h1 {
+        font-size: 5vw; /* Utilisation des unités de vue pour la taille de police */
+        margin-bottom: 5vw; /* Utilisation des unités de vue pour la marge inférieure */
+        margin-top: 10vw;
+    }
 }
 #dropdownMenu {
     display: none;
