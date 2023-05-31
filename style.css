@@ -32,10 +32,11 @@ html{
     margin-top: 2vw; /* Utilisation des unités de vue pour la marge supérieure */
 }
 
-#countdown h1 {
-    font-size: 3vw; /* Utilisation des unités de vue pour la taille de police */
+h1 {
+    font-size: 2.5vw; /* Utilisation des unités de vue pour la taille de police */
     margin-bottom: 0.5vw; /* Utilisation des unités de vue pour la marge inférieure */
     margin-top: 2vw;
+    text-align: center;
 }
 
 #countdown span {
@@ -44,7 +45,7 @@ html{
     height: 8vw; /* Utilisation des unités de vue pour la hauteur */
     background-color: #333;
     color: #fff;
-    font-size: 3vw; /* Utilisation des unités de vue pour la taille de police */
+    font-size: 3.5vw; /* Utilisation des unités de vue pour la taille de police */
     line-height: 8vw; /* Utilisation des unités de vue pour la hauteur de ligne */
     margin: 0 1vw; /* Utilisation des unités de vue pour les marges horizontales */
     border-radius: 5px;
@@ -57,15 +58,16 @@ html{
         height: 13vw; /* Utilisation des unités de vue pour la hauteur */
         background-color: #333;
         color: #fff;
-        font-size: 6vw; /* Utilisation des unités de vue pour la taille de police */
+        font-size: 6.5vw; /* Utilisation des unités de vue pour la taille de police */
         line-height: 13vw; /* Utilisation des unités de vue pour la hauteur de ligne */
         margin: 0 1vw; /* Utilisation des unités de vue pour les marges horizontales */
         border-radius: 5px;
     }
-    #countdown h1 {
+    h1 {
         font-size: 5vw; /* Utilisation des unités de vue pour la taille de police */
         margin-bottom: 5vw; /* Utilisation des unités de vue pour la marge inférieure */
         margin-top: 10vw;
+        text-align: center;
     }
 }
 #dropdownMenu {
@@ -96,8 +98,11 @@ li a{
 a{
     text-decoration: none;
 }
+iframe { 
+    display: block; 
+    margin: 0 auto; 
+}
 footer p{
-    margin-left: 50px;
     color: white;
 }
 footer a{
@@ -106,12 +111,6 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-}
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 p{
     text-align: center;
