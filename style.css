@@ -1,4 +1,4 @@
-html{
+html {
     font-family: Arial, sans-serif;
     height: 100%;
 }
@@ -27,45 +27,62 @@ html{
     border-radius: 5px;
 } */
 #countdown {
-    font-size: 2vw; /* Utilisation des unités de vue pour la taille de police */
+    font-size: 2vw;
+    /* Utilisation des unités de vue pour la taille de police */
     text-align: center;
-    margin-top: 2vw; /* Utilisation des unités de vue pour la marge supérieure */
+    margin-top: 2vw;
+    /* Utilisation des unités de vue pour la marge supérieure */
 }
 
 h1 {
-    font-size: 2.5vw; /* Utilisation des unités de vue pour la taille de police */
-    margin-bottom: 0.5vw; /* Utilisation des unités de vue pour la marge inférieure */
+    font-size: 2.5vw;
+    /* Utilisation des unités de vue pour la taille de police */
+    margin-bottom: 0.5vw;
+    /* Utilisation des unités de vue pour la marge inférieure */
     margin-top: 2vw;
     text-align: center;
 }
 
 #countdown span {
     display: inline-block;
-    width: 8vw; /* Utilisation des unités de vue pour la largeur */
-    height: 8vw; /* Utilisation des unités de vue pour la hauteur */
+    width: 8vw;
+    /* Utilisation des unités de vue pour la largeur */
+    height: 8vw;
+    /* Utilisation des unités de vue pour la hauteur */
     background-color: #333;
     color: #fff;
-    font-size: 3.5vw; /* Utilisation des unités de vue pour la taille de police */
-    line-height: 8vw; /* Utilisation des unités de vue pour la hauteur de ligne */
-    margin: 0 1vw; /* Utilisation des unités de vue pour les marges horizontales */
+    font-size: 3.5vw;
+    /* Utilisation des unités de vue pour la taille de police */
+    line-height: 8vw;
+    /* Utilisation des unités de vue pour la hauteur de ligne */
+    margin: 0 1vw;
+    /* Utilisation des unités de vue pour les marges horizontales */
     border-radius: 5px;
 }
 
 @media (max-width: 768px) {
     #countdown span {
         display: inline-block;
-        width: 13vw; /* Utilisation des unités de vue pour la largeur */
-        height: 13vw; /* Utilisation des unités de vue pour la hauteur */
+        width: 13vw;
+        /* Utilisation des unités de vue pour la largeur */
+        height: 13vw;
+        /* Utilisation des unités de vue pour la hauteur */
         background-color: #333;
         color: #fff;
-        font-size: 6.5vw; /* Utilisation des unités de vue pour la taille de police */
-        line-height: 13vw; /* Utilisation des unités de vue pour la hauteur de ligne */
-        margin: 0 1vw; /* Utilisation des unités de vue pour les marges horizontales */
+        font-size: 6.5vw;
+        /* Utilisation des unités de vue pour la taille de police */
+        line-height: 13vw;
+        /* Utilisation des unités de vue pour la hauteur de ligne */
+        margin: 0 1vw;
+        /* Utilisation des unités de vue pour les marges horizontales */
         border-radius: 5px;
     }
+
     h1 {
-        font-size: 5vw; /* Utilisation des unités de vue pour la taille de police */
-        margin-bottom: 5vw; /* Utilisation des unités de vue pour la marge inférieure */
+        font-size: 5vw;
+        /* Utilisation des unités de vue pour la taille de police */
+        margin-bottom: 5vw;
+        /* Utilisation des unités de vue pour la marge inférieure */
         margin-top: 10vw;
         text-align: center;
     }
@@ -73,45 +90,55 @@ h1 {
 #dropdownMenu {
     display: none;
 }
+
 #menuButton {
     background-color: transparent;
     border: none;
     cursor: pointer;
     margin-left: 20px;
 }
-li{
+
+li {
     list-style: none;
     padding: 10px;
 }
-li a{
+
+li a {
     text-decoration: none;
     color: #333;
     margin-left: 20px;
 }
-.navbarPortfolio{
+
+.navbarPortfolio {
     float: right;
     margin-right: 20px;
     color: #333;
     border: #333 1px solid;
     padding: 10px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-iframe { 
-    display: block; 
-    margin: 0 auto; 
+
+iframe {
+    display: block;
+    margin: 0 auto;
 }
-footer p{
+
+footer p {
     color: white;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: aqua;
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
-p{
+
+p {
     text-align: center;
 }
