@@ -124,8 +124,54 @@ a {
 iframe {
     display: block;
     margin: 0 auto;
+    width: 20vw;
 }
 
+@media (max-width: 1285px) {
+    iframe{
+        width: 25vw;
+    }
+}
+@media (max-width: 1110px) {
+    iframe{
+        width: 30vw;
+    }
+}
+@media (max-width: 900px) {
+    iframe{
+        width: 50vw;
+    }
+}
+@media (max-width: 790px) {
+    iframe{
+        width: 35vw;
+    }
+}
+@media (max-width: 710px) {
+    iframe{
+        width: 40vw;
+    }
+}
+@media (max-width: 570px) {
+    iframe{
+        width: 50vw;
+    }
+}
+@media (max-width: 490px) {
+    iframe{
+        width: 60vw;
+    }
+}
+@media (max-width: 365px) {
+    iframe{
+        width: 70vw;
+    }
+}
+@media (max-width: 310px) {
+    iframe{
+        width: 80vw;
+    }
+}
 footer p {
     color: white;
 }
