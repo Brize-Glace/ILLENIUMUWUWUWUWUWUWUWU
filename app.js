@@ -1,16 +1,16 @@
 // Date de fin du décompte
 var countDownDate = new Date("Oct 18, 2023 20:00:00").getTime();
 
-// Mettre à jour le décompte toutes les secondes
+// Met à jour le décompte toutes les secondes
 var x = setInterval(function () {
 
-  // Obtenir la date et l'heure actuelles
+  // Obtient la date et l'heure actuelles
   var now = new Date().getTime();
 
-  // Calculer la différence entre la date de fin et la date actuelle
+  // Calcule la différence entre la date de fin et la date actuelle
   var distance = countDownDate - now;
 
-  // Calculer les jours, heures, minutes et secondes restantes
+  // Calcule les jours, heures, minutes et secondes restantes
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -22,7 +22,7 @@ var x = setInterval(function () {
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
 
-  // Si le compte à rebours est terminé, afficher un message
+  // Si le compte à rebours est terminé, affiche un message
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "C'est l'heure les enfants!";
@@ -103,4 +103,60 @@ menuButton.addEventListener("click", function() {
     dropdownMenu.style.display = "block";
   }
 });
+
+const codeInput = document.getElementById("code_beta"); // Récupère l'élément d'entrée du code bêta
+const confirmButton = document.getElementById("confirm_button"); // Récupère le bouton de confirmation
+const headerBetaH3 =  document.getElementById("BETA_H3")
+var betaFeaturingDiv = document.getElementById("betaFeaturing"); // Sélectionne l'élément de la div "betaFeaturing"
+
+confirmButton.addEventListener("click", () => {
+  const enteredCode = codeInput.value; // Récupère la valeur saisie par l'utilisateur
+
+  // Effectue une requête GET pour récupérer le contenu du fichier JSONBin
+  fetch("https://api.jsonbin.io/v3/b/647b3a378e4aa6225ea891b7/latest", {
+    headers: {
+      "X-Master-Key": "$2b$10$3LAJC/h3ZR4euvKhXUECpOG5fFd8DRH89xCInUlVFdLhFkI7GyrZK" // Remplace "TON_API_KEY" par ta clé d'API JSONBin
+    }
+  })
+    .then(response => response.json())
+    .then(data => {
+      const codesBeta = data.record.codes_beta; // Récupère les codes bêta du fichier JSON
+
+      if (codesBeta.includes(enteredCode)) {
+        console.log("Code bêta valide !");
+        headerBetaH3.style.display = "block"
+        betaFeaturingDiv.innerHTML = "Code valide!"
+
+        // Effectue les actions nécessaires si le code est valide
+      } else {
+        console.log("Code bêta invalide !");
+        betaFeaturingDiv.innerHTML = "Code invalide!"
+        // Effectue les actions nécessaires si le code est invalide
+      }
+    })
+    .catch(error => {
+      console.error("Erreur lors de la requête :", error);
+      // Gère les erreurs de requête
+    });
+});
+var typedText = ""; // Variable pour stocker le texte saisi
+
+// Ajoute un écouteur d'événement "keydown" au document
+document.addEventListener("keydown", function(event) {
+  // Récupére la valeur de la touche pressée en minuscules
+  var key = event.key.toLowerCase();
+
+  // Ajoute la lettre à la variable typedText si elle n'est pas déjà présente
+  if (!typedText.includes(key)) {
+    typedText += key;
+  }
+
+  // Vérifie si le texte saisi contient les lettres "b", "e", "t" et "a" dans n'importe quel ordre
+  if (typedText.includes("b") && typedText.includes("e") && typedText.includes("t") && typedText.includes("a")) {
+    // Affiche la div "betaFeaturing"
+    betaFeaturingDiv.style.display = "block";
+  }
+});
+
+
 

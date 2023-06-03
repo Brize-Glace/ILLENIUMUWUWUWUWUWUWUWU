@@ -2,7 +2,9 @@ html {
     font-family: Arial, sans-serif;
     height: 100%;
 }
-
+#BETA_H3{
+    display: none;
+}
 /* SAVE */
 /* #countdown { 
     font-size: 24px;
@@ -171,6 +173,9 @@ iframe {
     iframe{
         width: 80vw;
     }
+}
+#betaFeaturing{
+    display: none;
 }
 footer p {
     color: white;
