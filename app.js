@@ -157,6 +157,3 @@ document.addEventListener("keydown", function(event) {
     betaFeaturingDiv.style.display = "block";
   }
 });
-
-
-
