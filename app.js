@@ -108,6 +108,7 @@ const codeInput = document.getElementById("code_beta"); // Récupère l'élémen
 const confirmButton = document.getElementById("confirm_button"); // Récupère le bouton de confirmation
 const headerBetaH3 =  document.getElementById("BETA_H3")
 var betaFeaturingDiv = document.getElementById("betaFeaturing"); // Sélectionne l'élément de la div "betaFeaturing"
+const bgColorBeta = document.getElementById("background"); 
 
 confirmButton.addEventListener("click", () => {
   const enteredCode = codeInput.value; // Récupère la valeur saisie par l'utilisateur
@@ -126,7 +127,7 @@ confirmButton.addEventListener("click", () => {
         console.log("Code bêta valide !");
         headerBetaH3.style.display = "block"
         betaFeaturingDiv.innerHTML = "Code valide!"
-
+        bgColorBeta.style.display = "block"
         // Effectue les actions nécessaires si le code est valide
       } else {
         console.log("Code bêta invalide !");
@@ -140,7 +141,6 @@ confirmButton.addEventListener("click", () => {
     });
 });
 var typedText = ""; // Variable pour stocker le texte saisi
-
 // Ajoute un écouteur d'événement "keydown" au document
 document.addEventListener("keydown", function(event) {
   // Récupére la valeur de la touche pressée en minuscules

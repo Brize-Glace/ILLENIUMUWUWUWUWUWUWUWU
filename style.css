@@ -2,9 +2,58 @@ html {
     font-family: Arial, sans-serif;
     height: 100%;
 }
-#BETA_H3{
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: backgroundAnimation 0.2s infinite;
     display: none;
 }
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: red;
+    }
+
+    16.66% {
+        background-color: orange;
+    }
+
+    33.33% {
+        background-color: yellow;
+    }
+
+    49.99% {
+        background-color: green;
+    }
+
+    66.66% {
+        background-color: blue;
+    }
+
+    83.33% {
+        background-color: indigo;
+    }
+
+    100% {
+        background-color: violet;
+    }
+}
+
+#BETA_H3 {
+    display: none;
+}
+
 /* SAVE */
 /* #countdown { 
     font-size: 24px;
@@ -89,6 +138,7 @@ h1 {
         text-align: center;
     }
 }
+
 #dropdownMenu {
     display: none;
 }
@@ -130,53 +180,63 @@ iframe {
 }
 
 @media (max-width: 1285px) {
-    iframe{
+    iframe {
         width: 25vw;
     }
 }
+
 @media (max-width: 1110px) {
-    iframe{
+    iframe {
         width: 30vw;
     }
 }
+
 @media (max-width: 900px) {
-    iframe{
+    iframe {
         width: 50vw;
     }
 }
+
 @media (max-width: 790px) {
-    iframe{
+    iframe {
         width: 35vw;
     }
 }
+
 @media (max-width: 710px) {
-    iframe{
+    iframe {
         width: 40vw;
     }
 }
+
 @media (max-width: 570px) {
-    iframe{
+    iframe {
         width: 50vw;
     }
 }
+
 @media (max-width: 490px) {
-    iframe{
+    iframe {
         width: 60vw;
     }
 }
+
 @media (max-width: 365px) {
-    iframe{
+    iframe {
         width: 70vw;
     }
 }
+
 @media (max-width: 310px) {
-    iframe{
+    iframe {
         width: 80vw;
     }
 }
-#betaFeaturing{
+
+#betaFeaturing {
     display: none;
 }
+
 footer p {
     color: white;
 }
