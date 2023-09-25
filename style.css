@@ -86,7 +86,7 @@ body {
     text-align: center;
     margin-top: 2vw;
     /* Utilisation des unités de vue pour la marge supérieure */
-    animation: tremble 0.1s linear infinite alternate;
+    animation: tremble 0.07s linear infinite alternate;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -96,7 +96,7 @@ body {
         transform: translateX(-2px) translateY(-2px);
     }
     100% {
-        transform: translateX(2px) translateY(2px);
+        transform: translateY(4px) translateX(4px);
     }
 }
 
@@ -151,6 +151,12 @@ h1 {
         /* Utilisation des unités de vue pour la marge inférieure */
         margin-top: 10vw;
         text-align: center;
+    }
+    #countdown{
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 }
 
