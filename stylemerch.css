@@ -1,0 +1,50 @@
+html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+h1{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.slider{
+    display: flex;
+}
+.tshirt-single {
+    max-width: 500px;
+}
+.text-content{
+    padding: 123.55px;
+}
+.redColorText{
+    color: red;
+}
+button{
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .slider{
+        flex-direction: column;
+    }
+    .text-content{
+        padding: 50px;
+    }
+    .tshirt-single {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
