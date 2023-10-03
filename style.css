@@ -152,6 +152,12 @@ h1 {
         margin-top: 10vw;
         text-align: center;
     }
+    #countdown{
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 #dropdownMenu {
