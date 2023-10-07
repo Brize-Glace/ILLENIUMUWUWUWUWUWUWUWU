@@ -4,6 +4,7 @@
 html {
     font-family: Arial, sans-serif;
     height: 100%;
+    width: 100%;
 }
 
 html,
@@ -193,63 +194,66 @@ li a {
 a {
     text-decoration: none;
 }
-
-iframe {
+.spotify iframe {
     display: block;
     margin: 0 auto;
     width: 20vw;
 }
-
+.steam iframe{
+    padding-top: 50px;
+    display: block;
+    margin: 0 auto;
+}
 @media (max-width: 1285px) {
-    iframe {
+    .spotify iframe {
         width: 25vw;
     }
 }
 
 @media (max-width: 1110px) {
-    iframe {
+    .spotify iframe {
         width: 30vw;
     }
 }
 
 @media (max-width: 900px) {
-    iframe {
+    .spotify iframe {
         width: 50vw;
     }
 }
 
 @media (max-width: 790px) {
-    iframe {
+    .spotify iframe {
         width: 35vw;
     }
 }
 
 @media (max-width: 710px) {
-    iframe {
+    .spotify iframe {
         width: 40vw;
     }
 }
 
 @media (max-width: 570px) {
-    iframe {
+    .spotify iframe {
         width: 50vw;
     }
 }
 
 @media (max-width: 490px) {
-    iframe {
+    .spotify iframe {
         width: 60vw;
     }
 }
 
 @media (max-width: 365px) {
-    iframe {
+    .spotify iframe {
         width: 70vw;
     }
 }
 
 @media (max-width: 310px) {
-    iframe {
+    .spotify iframe {
         width: 80vw;
     }
 }
