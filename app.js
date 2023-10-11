@@ -1,5 +1,5 @@
 // Date de fin du décompte
-var countDownDate = new Date("Oct 18, 2023 20:00:00").getTime();
+var countDownDate = new Date("Oct 18, 2023 21:00:00").getTime();
 
 // Met à jour le décompte toutes les secondes
 var x = setInterval(function () {
