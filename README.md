@@ -1,6 +1,6 @@
 # ILLENIUMUWUWUWUWUWUWUWU
 
-Countdown before the illenium live in paris
+Countdown before the illenium live TRILOGY in L-A
 
 # Deployment
 
