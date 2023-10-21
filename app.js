@@ -1,5 +1,6 @@
 // Date de fin du décompte
-var countDownDate = new Date("Oct 18, 2023 19:30:00").getTime();
+var countDownDate = new Date("Feb 2, 2024 16:30:00");
+countDownDate.setUTCHours(countDownDate.getUTCHours() - 7);
 
 // Met à jour le décompte toutes les secondes
 var x = setInterval(function () {
@@ -25,7 +26,7 @@ var x = setInterval(function () {
   // Si le compte à rebours est terminé, affiche un message
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "C'est l'heure les enfants!";
+    document.getElementById("countdown").innerHTML = "<p>C'est l'heure les enfants!</p>";
   }
 }, 1000);
 

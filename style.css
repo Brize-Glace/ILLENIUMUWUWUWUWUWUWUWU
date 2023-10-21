@@ -87,7 +87,7 @@ body {
     text-align: center;
     margin-top: 2vw;
     /* Utilisation des unités de vue pour la marge supérieure */
-    animation: tremble 0.07s linear infinite alternate;
+    /*animation: tremble 0.07s linear infinite alternate;*/
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -190,7 +190,6 @@ li a {
     border: #333 1px solid;
     padding: 10px;
 }
-
 a {
     text-decoration: none;
 }
