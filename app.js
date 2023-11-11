@@ -141,20 +141,26 @@ confirmButton.addEventListener("click", () => {
       // Gère les erreurs de requête
     });
 });
-var typedText = ""; // Variable pour stocker le texte saisi
-// Ajoute un écouteur d'événement "keydown" au document
+var typedText = "";
 document.addEventListener("keydown", function(event) {
-  // Récupére la valeur de la touche pressée en minuscules
-  var key = event.key.toLowerCase();
+  var key= event.key.toLowerCase();
 
-  // Ajoute la lettre à la variable typedText si elle n'est pas déjà présente
-  if (!typedText.includes(key)) {
+  if (key=== "b" && typedText.length === 0) {
     typedText += key;
+  } else if (key === "e" && typedText.length === 1){
+    typedText += key;
+  } else if (key === "t"  && typedText.length === 2) {
+    typedText += key;
+  } else if (key === "a" && typedText.length === 3) {
+    typedText += key;
+    console.log(typedText)
+  } else {
+    typedText = ""
   }
 
-  // Vérifie si le texte saisi contient les lettres "b", "e", "t" et "a" dans n'importe quel ordre
-  if (typedText.includes("b") && typedText.includes("e") && typedText.includes("t") && typedText.includes("a")) {
-    // Affiche la div "betaFeaturing"
+  if (typedText === "beta") {
     betaFeaturingDiv.style.display = "block";
+  } else {
+    betaFeaturingDiv.style.display = "none";
   }
 });
