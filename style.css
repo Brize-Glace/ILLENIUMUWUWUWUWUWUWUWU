@@ -193,10 +193,13 @@ li a {
 a {
     text-decoration: none;
 }
-.spotify iframe {
+.music iframe {
     display: block;
     margin: 0 auto;
     width: 20vw;
+}
+.appleMusic{
+    padding-top: 50px;
 }
 .steam iframe{
     padding-top: 50px;
