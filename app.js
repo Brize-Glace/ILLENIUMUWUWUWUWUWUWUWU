@@ -164,3 +164,34 @@ document.addEventListener("keydown", function(event) {
     betaFeaturingDiv.style.display = "none";
   }
 });
+
+
+function verifierProxy() {
+  var testImage = new Image();
+  testImage.onerror = function() {
+    document.getElementById('errorTitle').textContent = "Erreur de chargement!";
+    document.getElementById('errorMessage').textContent = "Il semble qu'une configuration proxy spécifique bloque le chargement des ressources externes.";
+    document.getElementById('steamIframe').style.display = "none"
+  };
+  testImage.src = "https://cdn.akamai.steamstatic.com/steam/apps/2604420/ss_caa9ff774ecb67bb04d75293e52509f62db62e1b.600x338.jpg?t=1698862475"; // URL de la ressource à charger
+}
+
+verifierProxy();
+
+function verifierProxy() {
+  var testImage = new Image();
+  testImage.onload = function() {
+
+    console.log("L'image s'est chargée avec succès !");
+  };
+  testImage.onerror = function() {
+
+    console.error("Erreur de chargement de l'image !");
+    document.getElementById('errorTitle').textContent = "Erreur de chargement!";
+    document.getElementById('errorMessage').textContent = "Il semble qu'une configuration proxy spécifique bloque le chargement des ressources externes.";
+    document.getElementById('steamIframe').style.display = "none"
+  };
+  testImage.src = "https://cdn.akamai.steamstatic.com/steam/apps/2604420/ss_caa9ff774ecb67bb04d75293e52509f62db62e1b.600x338.jpg?t=1698862475"; // URL de la ressource à charger
+}
+
+verifierProxy();

@@ -48,7 +48,11 @@
       
   </div>
   <div class="steam">
-    <iframe src="https://store.steampowered.com/widget/2604420/" frameborder="0" width="646" height="190"></iframe>
+    <iframe id="steamIframe" src="https://store.steampowered.com/widget/2604420/" frameborder="0" width="646" height="190"></iframe>
+    <noscript>
+      <h3 id="errorTitle">Oups! Une erreur est survenue lors du chargement de la source externe!</h3>
+      <p id="errorMessage">Verifiez que le javascript est activé sur votre navigateur ou que vous n'avez pas une configuration proxy spécifique!</p>
+    </noscript>
   </div>
   <div id="betaFeaturing">
     <label for="code_beta">Code bêta :</label>

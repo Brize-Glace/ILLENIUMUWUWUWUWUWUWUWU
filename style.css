@@ -206,6 +206,9 @@ a {
     display: block;
     margin: 0 auto;
 }
+.steam h3{
+    text-align: center;
+}
 @media (max-width: 1285px) {
     .spotify iframe {
         width: 25vw;
