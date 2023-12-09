@@ -169,8 +169,7 @@ document.addEventListener("keydown", function(event) {
 function verifierProxy() {
   var testImage = new Image();
   testImage.onerror = function() {
-    document.getElementById('errorTitle').textContent = "Erreur de chargement!";
-    document.getElementById('errorMessage').textContent = "Il semble qu'une configuration proxy spécifique bloque le chargement des ressources externes.";
+    document.getElementById('errorOnIFrame').style.display =  "block"
     document.getElementById('steamIframe').style.display = "none"
   };
   testImage.src = "https://cdn.akamai.steamstatic.com/steam/apps/2604420/ss_caa9ff774ecb67bb04d75293e52509f62db62e1b.600x338.jpg?t=1698862475"; // URL de la ressource à charger
@@ -187,8 +186,7 @@ function verifierProxy() {
   testImage.onerror = function() {
 
     console.error("Erreur de chargement de l'image !");
-    document.getElementById('errorTitle').textContent = "Erreur de chargement!";
-    document.getElementById('errorMessage').textContent = "Il semble qu'une configuration proxy spécifique bloque le chargement des ressources externes.";
+    document.getElementById('errorOnIFrame').style.display = "block"
     document.getElementById('steamIframe').style.display = "none"
   };
   testImage.src = "https://cdn.akamai.steamstatic.com/steam/apps/2604420/ss_caa9ff774ecb67bb04d75293e52509f62db62e1b.600x338.jpg?t=1698862475"; // URL de la ressource à charger
