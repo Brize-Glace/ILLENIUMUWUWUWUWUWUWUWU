@@ -1,33 +1,20 @@
-// Date de fin du décompte
-var countDownDate = new Date("Feb 2, 2024 16:30:00");
-countDownDate.setUTCHours(countDownDate.getUTCHours() - 7);
+const countDownDate = moment("2024-02-02T16:30:00-08:00");
 
-// Met à jour le décompte toutes les secondes
-var x = setInterval(function () {
+const x = setInterval(function () {
+    const now = moment();
 
-  // Obtient la date et l'heure actuelles
-  var now = new Date().getTime();
+    const duration = moment.duration(countDownDate.diff(now));
 
-  // Calcule la différence entre la date de fin et la date actuelle
-  var distance = countDownDate - now;
+    document.getElementById("days").textContent = duration.days();
+    document.getElementById("hours").textContent = duration.hours();
+    document.getElementById("minutes").textContent = duration.minutes();
+    document.getElementById("seconds").textContent = duration.seconds();
 
-  // Calcule les jours, heures, minutes et secondes restantes
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Afficher les jours, heures, minutes et secondes restantes dans les éléments HTML correspondants
-  document.getElementById("days").textContent = days;
-  document.getElementById("hours").textContent = hours;
-  document.getElementById("minutes").textContent = minutes;
-  document.getElementById("seconds").textContent = seconds;
-
-  // Si le compte à rebours est terminé, affiche un message
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "<p>C'est l'heure les enfants!</p>";
-  }
+    // Si le compte à rebours est terminé, affiche un message
+    if (duration.asMilliseconds() < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "<p>C'est l'heure les enfants!</p>";
+    }
 }, 1000);
 
 function getRandomColor() {
