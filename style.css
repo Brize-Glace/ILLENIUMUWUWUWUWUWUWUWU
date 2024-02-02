@@ -126,7 +126,16 @@ h1 {
     /* Utilisation des unités de vue pour les marges horizontales */
     border-radius: 5px;
 }
-
+.youtube{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.youtube iframe{
+    display: block;
+    margin: 0 auto;
+    width: 80vh;
+}
 @media (max-width: 768px) {
     #countdown span {
         display: inline-block;
@@ -158,6 +167,11 @@ h1 {
         justify-content: center;
         text-align: center;
         align-items: center;
+    }
+    .youtube iframe{
+        display: block;
+        margin: 0 auto;
+        width: 91vw;
     }
 }
 
