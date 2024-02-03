@@ -1,4 +1,4 @@
-const countDownDate = moment("2024-02-02T16:30:00-08:00");
+const countDownDate = moment("2024-02-03T18:30:00-08:00");
 
 const x = setInterval(function () {
     const now = moment();
