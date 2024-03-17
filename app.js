@@ -1,17 +1,23 @@
-const countDownDate = moment("2024-02-03T18:30:00-08:00");
+
+const countDownDate = moment("2024-05-17T12:30:00-08:00");
 
 const x = setInterval(function () {
     const now = moment();
 
-    const duration = moment.duration(countDownDate.diff(now));
+    const duration = countDownDate.diff(now, 'milliseconds');
 
-    document.getElementById("days").textContent = duration.days();
-    document.getElementById("hours").textContent = duration.hours();
-    document.getElementById("minutes").textContent = duration.minutes();
-    document.getElementById("seconds").textContent = duration.seconds();
+    const days = Math.floor(duration / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((duration % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
 
     // Si le compte à rebours est terminé, affiche un message
-    if (duration.asMilliseconds() < 0) {
+    if (duration < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "<p>C'est l'heure les enfants!</p>";
     }
