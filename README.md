@@ -1,6 +1,6 @@
 # ILLENIUMUWUWUWUWUWUWUWU
 
-Countdown before the illenium live TRILOGY in L-A
+Countdown before the ILLENIUM DJ Set at EDC Las Vegas 2024. 
 
 # Deployment
 
