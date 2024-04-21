@@ -141,14 +141,6 @@ footer{
         font-size: 16px;
     }
     footer{
-        top: -150px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        color: #fff;
-        font-size: 15px;
-        font-weight: 600;
-        margin-bottom: 10px;
+        display: none;
     }
 }
