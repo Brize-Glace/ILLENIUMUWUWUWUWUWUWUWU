@@ -53,7 +53,7 @@ body {
     margin-bottom: 25px;
 }
 .description {
-    color: #bababa;
+    color: #e4e4e4;
     text-align: center;
     font-size: 15px;
     letter-spacing: 1px;
@@ -102,8 +102,8 @@ footer{
 @media screen and (max-width: 900px) {
     body {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/stain2.jpg");
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         height: 150vh;
         position: relative;
         overflow-x: hidden;
