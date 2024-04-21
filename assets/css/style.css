@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+html {
+    overflow-y: hidden;
+}
+nav {
+    margin: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.selected {
+    color: #f1c40f;
+    font-weight: 800;
+}
+body {
+    background: url("./images/stain2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.sub_timer {
+    margin: 0 5px;
+    width: 20%;
+    text-align: center;
+}
+.heading {
+    color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    margin-bottom: 25px;
+}
+.description {
+    color: #bababa;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Lucida Sans;
+}
+.timer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.sub_timer {
+    width: 220px;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(20px);
+    -o-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.digit {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.digit_name {
+    color: #000;
+    background: #fff;
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 20px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 900px) {
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/stain2.jpg");
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        position: relative;
+        overflow-x: hidden;
+    }
+    html {
+        overflow-y: visible;
+        overflow-x: hidden;
+        top: 0;
+    }
+    .wrapper {
+        position: relative;
+        width: 90%;
+        flex-grow: 1;
+        transform: translate(-50%, -50%);
+        top: 500px;
+    }
+    .timer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub_timer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .digit {
+        font-size: 50px;
+    }
+    .digit_name {
+        font-size: 16px;
+    }
+    footer{
+        top: -150px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
