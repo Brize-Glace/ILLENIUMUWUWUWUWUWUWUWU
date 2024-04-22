@@ -109,7 +109,7 @@ footer{
         overflow-x: hidden;
     }
     html {
-        overflow-y: visible;
+        overflow-y: auto;
         overflow-x: hidden;
         top: 0;
     }
