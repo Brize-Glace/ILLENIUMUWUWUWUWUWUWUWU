@@ -110,7 +110,7 @@ footer{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/stain2.jpg");
         /* display: flex;
         flex-direction: column; */
-        height: 200vh;
+        height: 260vw;
         position: relative;
         overflow-x: hidden;
         overflow-y: auto;
@@ -147,7 +147,7 @@ footer{
     .digit_name {
         font-size: 16px;
     }
-    footer{
+    /* footer{
         display: none;
-    }
+    } */
 }

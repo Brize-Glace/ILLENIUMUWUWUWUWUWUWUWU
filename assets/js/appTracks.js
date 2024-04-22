@@ -1,4 +1,3 @@
-// Tableau des tracks avec leurs noms, dates d'anniversaire et noms à afficher dans la page HTML
 var tracks = [
     { name: "Starfall", birthday: new Date("Apr 28, 2024").getTime(), displayName: "Starfall" },
     { name: "Lifeline", birthday: new Date("Apr 28, 2024").getTime(), displayName: "Lifeline" },
