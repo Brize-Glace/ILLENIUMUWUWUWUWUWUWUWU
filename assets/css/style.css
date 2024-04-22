@@ -104,7 +104,7 @@ footer{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/stain2.jpg");
         /* display: flex;
         flex-direction: column; */
-        height: 150vh;
+        height: 200vh;
         position: relative;
         overflow-x: hidden;
     }
