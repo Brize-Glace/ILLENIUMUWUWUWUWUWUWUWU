@@ -107,6 +107,7 @@ footer{
         height: 150vh;
         position: relative;
         overflow-x: hidden;
+        overflow-y: auto;
     }
     html {
         overflow-y: auto;
